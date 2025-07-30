@@ -10,8 +10,13 @@ plant_type = input(
 advice = ""
 
 # Determine advice based on the season
-if season == "summer":
+
+if season == "spring":
+    advice += "Plant your seeds"
+elif season == "summer":
     advice += "Water your plants regularly and provide some shade.\n"
+elif season == "autum":
+    advice += "Focus on mulching and planting cool-season vegetables."
 # Add more seasons like Spring and Autum
 elif season == "winter":
     advice += "Protect your plants from frost with covers.\n"
@@ -21,6 +26,9 @@ else:
 # Determine advice based on the plant type
 if plant_type == "flower":
     advice += "Use fertiliser to encourage blooms."
+elif plant_type == "fruit":
+    advice += ("Water regularly, especially during dry periods "
+               "and the flowering and fruiting stages. ")
 elif plant_type == "vegetable":
     advice += "Keep an eye out for pests!"
 else:
